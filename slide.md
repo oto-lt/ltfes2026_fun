@@ -33,7 +33,7 @@ h2 { color: #2b8bf2; }
 
 <style scoped>
 li { font-size: 0.9em; }
-img.qr { position: absolute; top: 0; right: 0; height: 260px; }
+img.qr { position: absolute; top: 0; right: 0; height: 200px; }
 </style>
 
 ![bg left](https://montblank.fun/icon.png)
