@@ -407,13 +407,15 @@ puts(greet("marron."))
 
 <style scoped>pre { font-size: 1.2em; }</style>
 
-```ruby
+```js
 function greet(name)
   if (!name)
     return "hello"
   end
   return "hi, " + name
 end
+
+// ...
 ```
 
 もう完全にRubyの見た目 … でも、これ本当に動くの？
@@ -443,6 +445,8 @@ function greet(name)                              {
   end
   return "hi, " + name                            ;}
 end
+
+// ...
 ```
 
 :arrow_right: 中身は元の言語のまま。なので動く
