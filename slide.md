@@ -388,7 +388,7 @@ puts(greet("marron."))
 
 ---
 
-# フェーズ2：文法を偽装
+## フェーズ2：文法を偽装
 
 仕上げに `end` を付ける
 
@@ -445,7 +445,7 @@ end
 
 ---
 
-## フェーズ3：自動化
+## フェーズ3：自動化・デモ
 
 手動でインデントをそろえたりするのは面倒 :arrow_right: **ツールにやらせる**
 
@@ -461,6 +461,63 @@ end
 - 文法偽装を自動化する
 - そこでindentierという他言語をインデントベース言語「風」に変換するツールを作った
 - 名前と仕様はPrettier由来
+
+-->
+
+---
+
+<style scoped>
+h2 { margin-bottom: 6px; }
+p { margin: 4px 0; }
+code { font-size: 0.7em; }
+pre { margin: 6px 0; }
+pre code {
+  font-size: 0.55em;
+  line-height: 1.3;
+}
+</style>
+
+## indentier について
+
+Prettier とほぼ同じコマンドの使い方、設定ファイルの項目
+
+`npm install -D indentier`
+`npx indentier --write ./src/ --mode ruby`
+
+今回のデモで使用する例 `.indentierrc.json`
+
+```jsonc
+{
+  "mode": "default", "tabWidth": 2, "useTabs": false,
+  "offset": 20, "minColumn": 60,
+  "brackets": true, "semicolon": true, "comma": true,
+  "ruby": { "variableName": "end", "injectDeclaration": true, "smartEnd": true },
+  "plugins": ["@indentier/plugin-coffee"]
+}
+```
+
+---
+
+## indentier の実装(簡易)
+
+各行末の記号を正規表現で取り出して右端に隠す
+
+- AST構築等は無し、テキスト処理のみ
+- `end` の挿入：`{` と `}` の対応を追いかけて、`if` や `function` のブロックが閉じているところに `end` を差し込む
+
+```js
+function greet(name)                                        {
+  if (!name)                                                {
+    return "hello"                                          ;} // <--
+  end
+  return "hi, " + name                                      ;} // <--
+end
+```
+
+<!--
+
+- ASTを使わず正規表現でテキストを処理しているだけ
+- end注入：{ が来たらスタックに積む、} が来たら取り出す。その } がブロック(if/function等)なら end を追加
 
 -->
 
@@ -489,12 +546,17 @@ end
 
 ---
 
-## 無理だったこと
+## 無理だったこと・難しかったこと
 
 - 言語の制約
   - JS/TS/Coffee
     マクロ機構がない :arrow_right: `def` などの新しい構文を導入できない
     `do` がすでに**予約語** :arrow_right: `do...end` 構文作れない
+- 言語の自由さ
+  - インデントベースではない言語は書き方の自由度が高い
+    :arrow_right: パースとその後の処理がうまくいかないケースがあった
+    (見られたケースは修正済みだがまだあるかも)
+  - 正規表現では限界があるかも
 
 <!--
 
@@ -514,7 +576,7 @@ end
 
 <style scoped>
 #big p {
-  font-size: 80px;
+  font-size: 9vw;
   font-weight: 1000;
 }
 </style>
