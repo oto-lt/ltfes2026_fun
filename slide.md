@@ -538,7 +538,14 @@ Rubyを学ぼう:bangbang:
 
 ### 今回作ったモノ
 
-- 簡易関数偽装
+<style scoped>
+li { font-size: 0.8em; }
+</style>
+
+- 今回のスライドとコード
+  https://github.com/oto-lt/ltfes2026_fun
+
+- 簡易関数偽装ライブラリ
   https://github.com/otnc/fxxkinmethod
   https://www.npmjs.com/package/fxxkinmethod
   
@@ -546,13 +553,14 @@ Rubyを学ぼう:bangbang:
   npm install fxxkinmethod
   ```
 
-- 簡易文法偽装
+- 簡易文法偽装自動化ライブラリ
   https://github.com/indentier/indentier
   https://www.npmjs.com/package/indentier
   
   ```bash
   npm install indentier
   ```
+
 
 <!--
 
