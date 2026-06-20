@@ -1,0 +1,29 @@
+{
+  "name": "marp-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "marp slide.md -o index.html",
+    "dev": "marp -w slide.md",
+    "export": "marp slide.md --pdf --allow-local-files",
+    "conv": "node ./scripts/conv.mjs",
+    "demo": "node ./scripts/demo.mjs",
+    "do:origin": "node ./scripts/run-origin.mjs",
+    "do:converted": "node ./scripts/run-converted.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@indentier/plugin-coffee": "^0.1.1",
+    "@marp-team/marp-cli": "^4.2.3",
+    "chalk": "^5.6.2",
+    "coffeescript": "^2.7.0",
+    "consola": "^3.4.2",
+    "fxxkinmethod": "^1.0.1",
+    "indentier": "^0.5.1"
+  }
+}

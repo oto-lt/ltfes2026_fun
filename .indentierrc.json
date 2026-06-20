@@ -1,0 +1,16 @@
+{
+  "mode": "default",
+  "tabWidth": 2,
+  "useTabs": false,
+  "offset": 20,
+  "minColumn": 60,
+  "brackets": true,
+  "semicolon": true,
+  "comma": true,
+  "ruby": {
+    "variableName": "end",
+    "injectDeclaration": true,
+    "smartEnd": true
+  },
+  "plugins": ["@indentier/plugin-coffee"]
+}

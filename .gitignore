@@ -1,0 +1,13 @@
+# modules
+node_modules
+
+# watch
+slide.html
+
+# build
+index.html
+slide.pdf
+slide.pptx
+
+# demo
+demo/converted
