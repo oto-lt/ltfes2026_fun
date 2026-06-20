@@ -639,7 +639,6 @@ li { font-size: 0.8em; }
     https://github.com/indentier/plugin-coffee
     https://www.npmjs.com/package/@indentier/plugin-coffee
 
-
 <!--
 
 - RubyKaigiでRubyを書きたくなった／でも学習コストが高い
