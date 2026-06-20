@@ -343,6 +343,8 @@ puts(greet("marron."));
 const { puts } = require("fxxkinmethod/ruby");
 ```
 
+実装イメージ
+
 ```js
 // fxxkinmethod/ruby
 export const puts = (...args) => {
