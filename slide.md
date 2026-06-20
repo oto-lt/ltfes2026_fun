@@ -39,10 +39,11 @@ img.qr { position: absolute; top: 0; right: 0; height: 260px; }
 ![bg left](https://montblank.fun/icon.png)
 
 - まろん｡ / 村田凜空
-- Hobbies
-  - 旅行・散策
-  - 技術・開発
-  - 温泉
+- Likes:
+  - アマチュア言語処理系
+  - JavaScript・AltJS(CoffeeScript等)
+  - ネタ開発
+  - OSS活動
 - Links:
   - https://montblank.fun/
   - Twitter(旧X): [rin_montblank](https://twitter.com/rin_montblank)
@@ -100,6 +101,14 @@ img.qr { position: absolute; top: 0; right: 0; height: 260px; }
 - 気が向けば温泉
 
 -->
+
+---
+
+## 自己紹介 ― 最近の活動・趣味
+
+今朝
+
+![h:460](./img/kitamihara.png)
 
 ---
 
