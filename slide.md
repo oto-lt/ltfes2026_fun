@@ -44,6 +44,7 @@ img.qr { position: absolute; top: 0; right: 0; height: 260px; }
   - JavaScript・AltJS(CoffeeScript等)
   - ネタ開発
   - OSS活動
+  - ドメイン収集(最近買った: **gijutusharin.li**)
 - Links:
   - https://montblank.fun/
   - Twitter(旧X): [rin_montblank](https://twitter.com/rin_montblank)
