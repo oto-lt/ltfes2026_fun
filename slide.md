@@ -625,21 +625,18 @@ li { font-size: 0.8em; }
 - 今回のスライドとコード
   https://github.com/oto-lt/ltfes2026_fun
 
-- 簡易関数偽装ライブラリ
+- 簡易関数偽装ライブラリ (npm)
   https://github.com/otnc/fxxkinmethod
   https://www.npmjs.com/package/fxxkinmethod
   
-  ```bash
-  npm install fxxkinmethod
-  ```
 
-- 簡易文法偽装自動化ライブラリ
+- 簡易文法偽装自動化ライブラリ (npm)
   https://github.com/indentier/indentier
   https://www.npmjs.com/package/indentier
   
-  ```bash
-  npm install indentier
-  ```
+  - CoffeeScript用のプラグイン
+    https://github.com/indentier/plugin-coffee
+    https://www.npmjs.com/package/@indentier/plugin-coffee
 
 
 <!--
@@ -648,5 +645,6 @@ li { font-size: 0.8em; }
 - なら見た目だけRubyにすればいい、という発想
 - やってることは括弧を右端へ＋end を足すだけ、中身は動く
 - ネタだけどnpm公開済み、ぜひ使ってと締める
+- CoffeeScriptを触ってる方はぜひそっちも
 
 -->
