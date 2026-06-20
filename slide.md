@@ -33,6 +33,7 @@ h2 { color: #2b8bf2; }
 
 <style scoped>
 li { font-size: 0.9em; }
+img.qr { position: absolute; top: 0; right: 0; height: 260px; }
 </style>
 
 ![bg left](https://montblank.fun/icon.png)
@@ -48,7 +49,7 @@ li { font-size: 0.9em; }
   - Misskey: [@m@misskey.otnc.dev](https://misskey.otnc.dev/@m)
   - GitHub: [otnc](https://github.com/otnc)
 
-<img style="position: fixed; top: 0; right: 0; height: 260" src="./img/montblank.fun-qrcode.png">
+<img class="qr" src="./img/montblank.fun-qrcode.png">
 
 <!--
 
